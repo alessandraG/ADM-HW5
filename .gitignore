@@ -102,3 +102,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+dictionary.json
+wiki-topcats-categories.txt
+wiki-topcats-page-names.txt
+wiki-topcats-reduced.txt
