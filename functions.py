@@ -222,6 +222,8 @@ def steps(G,category_dict):
                 Distance[i]=(dfg.loc[dfg.Category=='American_television_actors']['Distance'].values)[0]
             sorted_d = sorted(Distance.items(), key=operator.itemgetter(1))
             G.node[e]['Category']=sorted_d[0][0]
+        else:
+            G.node[e]['Category']=G.node[e]['Category'][0]
     category_dict1={}
     for k in category_dict:
         m=category_dict[k]
